@@ -21,15 +21,15 @@ namespace ConsoleApplication
                 string customerName = Console.ReadLine();
 
                 // Input Number Of Coffee Bags
-                Console.Write("Enter Number Of Coffee Bags (1-300): ");
+                Console.Write("Enter Number Of Coffee Bags (1-100): ");
                 int numCoffeeBags = Int32.Parse(Console.ReadLine());
 
                 // Keep Re-Entering Number Of Coffee Bags
                 // If Until User Enters Invalid Value
-                while (numCoffeeBags < 1 || numCoffeeBags > 300)
+                while (numCoffeeBags < 1 || numCoffeeBags > 100)
                 {
-                    Console.WriteLine("Value Must Be Between 1 And 200!");
-                    Console.Write("Re-Enter Number Of Coffee Bags (1-200): ");
+                    Console.WriteLine("Value Must Be Between 1 And 100!");
+                    Console.Write("Re-Enter Number Of Coffee Bags (1-100): ");
                     numCoffeeBags = Int32.Parse(Console.ReadLine());
                 }
 
@@ -65,7 +65,7 @@ namespace ConsoleApplication
 
                 if (isReseller)
                 {
-                    discount = totalCost * 0.30;
+                    discount = totalCost * 0.10;
                 }
 
                 // Print Bill
